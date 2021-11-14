@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag_user"
+    android:background="#FAF1E6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserFragment">
+
+    <LinearLayout
+        android:id="@+id/header_profile"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="#ACCCB4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textColor="#064420"
+            android:layout_centerVertical="true">
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/my_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="60dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground" >
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name:"
+        android:textColor="#064420"
+        android:textSize ="30sp"
+        ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="studentA"
+            android:textColor="#ACCCB4"
+            android:textSize ="25sp"
+
+            ></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My point:"
+            android:textSize ="30sp"
+            android:textColor="#064420"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize ="25sp"
+            android:id="@+id/point_view"
+            android:text="100"
+            android:textColor="#ACCCB4"
+            ></TextView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_point"
+        android:text="Refresh"
+        android:backgroundTint="#FDFAF6"
+        android:textColor="#ACCCB4"
+        ></Button>
+
+
+
+
+</LinearLayout>

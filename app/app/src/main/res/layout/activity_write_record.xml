@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/base_bg">
+    <RelativeLayout
+        android:id="@+id/header_m"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="#ACCCB4"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Plant Diary"
+            android:textColor="#064420"
+            android:layout_toRightOf="@+id/back"
+            android:textSize="25dp"></TextView>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/record_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="yyyy년 MM월 dd일 EE요일"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/record_states"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"></TextView>
+
+            <LinearLayout
+                android:id="@+id/record_states"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/record_iv"
+                tools:layout_editor_absoluteX="0dp">
+
+                <ImageView
+                    android:id="@+id/sun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sun"></ImageView>
+
+                <TextView
+                    android:id="@+id/record_sun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"></View>
+
+                <ImageView
+                    android:id="@+id/water"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/drop"></ImageView>
+
+                <TextView
+                    android:id="@+id/record_water"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"></View>
+
+                <ImageView
+                    android:id="@+id/temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/thermometer"></ImageView>
+
+                <TextView
+                    android:id="@+id/record_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="°C" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"></View>
+
+                <ImageView
+                    android:id="@+id/humid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/windy"></ImageView>
+
+                <TextView
+                    android:id="@+id/record_humid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/test"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/select_photo"
+                android:visibility="visible">
+            </ImageView>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add your photo!" />
+
+
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please enter your title"></EditText>
+
+            <EditText
+                android:id="@+id/intext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textLongMessage"
+                android:hint="Please enter your content"></EditText>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:id="@+id/okbtn"
+                android:text="send"></Button>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:id="@+id/container"></FrameLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

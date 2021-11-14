@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/nemo_4"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/record_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="8dp"
+            android:layout_marginTop="30dp"
+            android:text="yyyy년 MM월 dd일 EE요일"
+            android:textSize="20sp"></TextView>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/record_states"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="6dp"
+                android:src="@drawable/sun"></ImageView>
+
+            <TextView
+                android:id="@+id/record_sun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="00" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="%" />
+            <View
+                android:layout_width="20dp"
+                android:layout_height="30dp">
+            </View>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="6dp"
+                android:src="@drawable/drop"></ImageView>
+
+            <TextView
+                android:id="@+id/record_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="00" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text=" " />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+           android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="6dp"
+                android:src="@drawable/thermometer"></ImageView>
+            <TextView
+                android:id="@+id/record_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="00" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="°C" />
+            <View
+                android:layout_width="20dp"
+                android:layout_height="30dp">
+            </View>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:src="@drawable/windy"></ImageView>
+
+            <TextView
+                android:id="@+id/record_humid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="00" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="%" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/record_iv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/nemo_5" />
+
+        <TextView
+            android:id="@+id/record_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="ㅇㅇㅇㅇㅇㅇ라는 제목이 있다."
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/record_intext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_marginBottom="50dp"
+            android:text="본문 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/record_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선생님 확인이 아직 완료되지 않았습니다."
+            android:textColor="#F44336"></TextView>
+    </LinearLayout>
+
+</LinearLayout>

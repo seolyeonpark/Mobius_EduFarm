@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--장터게시판 카드뷰-->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/market_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_margin="20dp"
+        card_view:cardBackgroundColor="#FDFAF6"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardElevation="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="example"
+                android:textColor="#064420"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:id="@+id/author_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/qtymi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="9dp"
+                    android:text="stock: "
+                    android:textColor="#064420"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="9dp"
+                    android:text="samkim"
+                    android:textColor="#064420"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/button_send"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="90dp"
+                    android:onClick="sendMessage"
+                    android:textColor="#064420"
+                    android:text="buy" />
+
+                <TextView
+                    android:id="@+id/time_stamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/name_text_view"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/profile_name"
+                    android:gravity="right"
+                    android:text="only few left"
+                    android:textColor="#ACCCB4"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+

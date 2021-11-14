@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--여기는 내가 갖고 있는 기능 게시판-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag_item"
+    android:background="#FAF1E6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemFragment">
+
+    <RelativeLayout
+        android:id="@+id/header_i"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="#ACCCB4"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Item"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#064420"
+            android:layout_centerVertical="true">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btn_buy"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:backgroundTint="#FDFAF6"
+            android:background="@drawable/add_item"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true">
+
+        </ImageButton>
+
+    </RelativeLayout>
+
+<!--그리드뷰로 구현예정-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_i">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
